@@ -1,0 +1,21 @@
+
+//MIXINS
+@mixin list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+@mixin base-button{
+	background: $action-color;
+	color: $header-accent-color;
+	border: 2px solid $action-color;
+	font-size: 1.3rem;
+	padding: 15px 60px;
+	margin: 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	&:hover{
+		background: transparent;
+		color: $action-color;
+	}
+}

@@ -1,0 +1,130 @@
+.g-header{
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	background: white;
+}	
+.navbar{
+	position: relative;
+	width: 100%;
+	padding: 0 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 55px;
+
+	&-hamburger{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		min-width: 60px;
+		height: 100%;
+		
+		&__nav-button{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			z-index: 1001;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+			&--active{
+				.navbar-hamburger__nav-ham{
+					background: transparent;
+					&::before{
+						top:0px;
+						background: white;
+						transform: rotateZ(-45deg);			
+					}
+					&:after{
+						top:0px;
+						background: white;
+						transform: rotateZ(45deg);
+					}
+				}
+			}
+		}
+		&__nav-ham{
+			position: relative;
+			background: $header-accent-color;
+			height: 3px;
+			width:100%;
+			&::before,&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				background-color: $header-accent-color;
+				height: 3px;
+				width: 30px;
+				transition: top 0.25s,transform 0.35s ease;
+				
+			}
+			&::before{
+				top: -10px;
+			}
+			&::after{
+				top: 10px;
+			}
+		}
+		
+	}
+	&__logo{
+		top: 15%;
+		height: 40px;
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin: auto;
+	}
+	&__cart{
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		&__title{
+			font-size: 1.4rem;
+			margin-right: 10px;
+		}
+		&__img{
+			height: 27px;
+		}
+	}
+}
+.categories{
+	width: 100%;
+	height: 30px;
+	background: $header-accent-color;
+	&-list{
+		@include list-reset;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		&__item{
+			width: 12.5%;
+			border-right: 1px solid white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			&:last-child{
+				border: none;
+			}
+			:hover{
+				color: $action-color;
+			}
+		}
+		&__link{
+			color: white;
+			width: 100%;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			font-weight: 700;
+			line-height: 1rem;
+		}
+	}
+}

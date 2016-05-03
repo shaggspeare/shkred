@@ -1,0 +1,35 @@
+*{
+	outline: none;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		}
+	}
+
+.g-clearfix {
+
+	&::before,
+	&::after {
+		content: "";
+		display: table;
+		}
+
+	&::after {
+		clear: both;
+		}
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body{
+	font-family: 'Roboto', Arial, sans-serif;
+	color: $header-accent-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

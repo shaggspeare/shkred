@@ -1,0 +1,112 @@
+[  
+   {  
+      "id":1,
+      "articul":52694,
+      "name":"Стакан низкий 245 мл Casablanca",
+      "description":"объем 245 мл, диаметр 84 мм, высота 90 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":21.9
+   },
+   {  
+      "id":2,
+      "articul":52703,
+      "name":"Стакан высокий 290 мл Casablanca",
+      "description":"объем 290 мл, диаметр 78 мм, высота 120 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":24
+   },
+   {  
+      "id":3,
+      "articul":52704,
+      "name":"Стакан низкий 355 мл Casablanca",
+      "description":"объем 355 мл, диаметр 92 мм, высота 100 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":21.6
+   },
+   {  
+      "id":4,
+      "articul":52705,
+      "name":"Стакан низкий 270 мл Casablanca",
+      "description":"объем 270 мл, диаметр 86 мм, высота 92 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":13.5
+   },
+   {  
+      "id":5,
+      "articul":52706,
+      "name":"Стакан высокий 365 мл Casablanca",
+      "description":"объем 365 мл, диаметр 80 мм, высота 148 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":19.4
+   },
+   {  
+      "id":6,
+      "articul":52707,
+      "name":"Стакан высокий 475 мл Casablanca",
+      "description":"объем 475 мл, диаметр 86 мм, высота 162 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":32.9
+   },
+   {  
+      "id":7,
+      "articul":52708,
+      "name":"Стакан высокий 355 мл Casablanca",
+      "description":"объем 355 мл, диаметр 83 мм, высота 122 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":21.6
+   },
+   {  
+      "id":8,
+      "articul":25425,
+      "name":"Бокал для шампанского 150 мл Princesa",
+      "description":"объем 150 мл, диаметр 50 мм, высота 196 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Бокалы для шампанского",
+      "producer":"Arcoroc (Франция)",
+      "price":60.8
+   },
+   {  
+      "id":9,
+      "articul":25433,
+      "name":"Бокал для вина 310 мл Princesa",
+      "description":"объем 310 мл, диаметр 74 мм, высота 197 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Бокалы для вина",
+      "producer":"Arcoroc (Франция)",
+      "price":81
+   },
+   {  
+      "id":10,
+      "articul":25565,
+      "name":"Бокал для вина 230 мл Princesa",
+      "description":"объем 230 мл, диаметр 69 мм, высота 174 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Бокалы для вина",
+      "producer":"Arcoroc (Франция)",
+      "price":67.5
+   }
+]

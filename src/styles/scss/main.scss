@@ -1,0 +1,14 @@
+//partials
+@import './partials/normalize.scss';
+
+@import './partials/variables.scss';
+@import './partials/common.scss';
+@import './partials/fonts.scss';
+@import './partials/layout.scss';
+@import './partials/mixins.scss';
+
+//blocks
+@import './blocks/header/site-header.scss';
+@import './blocks/slider/slider.scss';
+@import './blocks/bestseller-section/bestseller-section.scss';
+@import './blocks/sidenav/sidenav.scss';
