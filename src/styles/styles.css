@@ -418,17 +418,20 @@ body {
       z-index: 1001;
       width: 30px;
       height: 30px;
-      cursor: pointer; }
-      .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham {
-        background: transparent; }
-        .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham::before {
-          top: 0px;
-          background: white;
-          transform: rotateZ(-45deg); }
-        .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham:after {
-          top: 0px;
-          background: white;
-          transform: rotateZ(45deg); }
+      cursor: pointer;
+      transition: transform 0.35s ease; }
+      .navbar-hamburger__nav-button--active {
+        transform: translateX(210px); }
+        .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham {
+          background: transparent; }
+          .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham::before {
+            top: 0px;
+            background: white;
+            transform: rotateZ(-45deg); }
+          .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham:after {
+            top: 0px;
+            background: white;
+            transform: rotateZ(45deg); }
     .navbar-hamburger__nav-ham {
       position: relative;
       background: #333333;

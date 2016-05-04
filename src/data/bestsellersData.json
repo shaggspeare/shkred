@@ -86,27 +86,5 @@
       "category":"Бокалы для шампанского",
       "producer":"Arcoroc (Франция)",
       "price":60.8
-   },
-   {  
-      "id":9,
-      "articul":25433,
-      "name":"Бокал для вина 310 мл Princesa",
-      "description":"объем 310 мл, диаметр 74 мм, высота 197 мм.",
-      "amount":6,
-      "unit":"Стекло",
-      "category":"Бокалы для вина",
-      "producer":"Arcoroc (Франция)",
-      "price":81
-   },
-   {  
-      "id":10,
-      "articul":25565,
-      "name":"Бокал для вина 230 мл Princesa",
-      "description":"объем 230 мл, диаметр 69 мм, высота 174 мм.",
-      "amount":6,
-      "unit":"Стекло",
-      "category":"Бокалы для вина",
-      "producer":"Arcoroc (Франция)",
-      "price":67.5
    }
 ]
