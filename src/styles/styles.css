@@ -421,7 +421,7 @@ body {
       cursor: pointer;
       transition: transform 0.35s ease; }
       .navbar-hamburger__nav-button--active {
-        transform: translateX(210px); }
+        transform: translateX(205px); }
         .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham {
           background: transparent; }
           .navbar-hamburger__nav-button--active .navbar-hamburger__nav-ham::before {

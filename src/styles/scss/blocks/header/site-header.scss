@@ -32,7 +32,7 @@
 			cursor: pointer;
 			transition: transform 0.35s ease;
 			&--active{
-				transform: translateX(210px);
+				transform: translateX(205px);
 				.navbar-hamburger__nav-ham{
 					background: transparent;
 					&::before{
