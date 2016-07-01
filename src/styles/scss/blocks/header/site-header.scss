@@ -51,14 +51,14 @@
 		&__nav-ham{
 			position: relative;
 			background: $header-accent-color;
-			height: 3px;
+			height: 2px;
 			width:100%;
 			&::before,&::after{
 				content: '';
 				display: block;
 				position: absolute;
 				background-color: $header-accent-color;
-				height: 3px;
+				height: 2px;
 				width: 30px;
 				transition: top 0.25s,transform 0.35s ease;
 				

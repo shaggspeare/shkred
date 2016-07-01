@@ -435,14 +435,14 @@ body {
     .navbar-hamburger__nav-ham {
       position: relative;
       background: #333333;
-      height: 3px;
+      height: 2px;
       width: 100%; }
       .navbar-hamburger__nav-ham::before, .navbar-hamburger__nav-ham::after {
         content: '';
         display: block;
         position: absolute;
         background-color: #333333;
-        height: 3px;
+        height: 2px;
         width: 30px;
         transition: top 0.25s,transform 0.35s ease; }
       .navbar-hamburger__nav-ham::before {
