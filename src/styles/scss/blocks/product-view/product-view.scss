@@ -1,0 +1,81 @@
+.product-view{
+	//margin-top: 65px;
+	padding: 50px;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__image-wrapper{
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__img{
+
+	}
+	&-info{
+		align-self: flex-start;
+		width: 60%;
+		padding-left: 50px;
+		&__name{
+			margin: 0;
+			font-family: "Roboto Condensed", Arial;
+			font-size: 2.75rem;
+		}
+		&__articul{
+				font-size: 1.3rem;
+		}
+		&__price{
+			color: $golden;
+			font-size: 3rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		&__desc{
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+			&-title{
+				font-family: "Roboto Condensed", Arial;
+				font-size: 1.5rem;
+			}
+		}
+		&-chars{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		
+		&__btn-buy{
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+			background: $header-accent-color;
+			color: white;
+			border: 2px solid $header-accent-color;
+			padding: 20px 50px;
+			width: 100%;
+			font-size: 1.5rem;
+			transition: all 0.3s ease;
+			&:hover{
+				background: transparent;
+				color: $header-accent-color;
+			}
+		}
+	}
+}
+
+.chars-table{
+	width: 100%;
+	border: 1px solid $light-gray;
+	border-collapse: collapse;
+	font-size: 1.25rem;
+	&__body{
+
+	}
+	&__line{}
+	&__cell{
+		text-align: center;
+		padding: 10px;
+		border: 1px solid $light-gray;
+	}
+}

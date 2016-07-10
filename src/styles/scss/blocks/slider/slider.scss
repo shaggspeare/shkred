@@ -1,6 +1,6 @@
 .slider{
 	margin-top: 65px;
-	height: 45vh;
+	height: 65vh;
 	min-height: 350px;
 	padding: 0 75px;
 	display: flex;
@@ -18,32 +18,36 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	// align-items: center;
 	&__title{
-		width: 100%;
+		width: 80%;
 		text-align: center;
 		color: white;
-		font-size: 3.5rem;
-		line-height: 3.5rem;
+		font-size: 4rem;
+		line-height: 4rem;
 		font-weight: 300;
 		margin: 0;
+		padding-top: 50px;
 		// text-shadow: 1px 1px $header-accent-color;
 	}
 	&-promo{
-		width: 800px;
+		position: relative;
+		width: 60%;
+		min-width: 320px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		//border: 1px solid white;
 		&-info{
-			width: 70%;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: flex-start;
+			
+			// display: flex;
+			// flex-direction: column;
+			// justify-content: space-between;
+			// align-items: flex-start;
 			&__description{
 				max-width: 550px;
 				color: white;
-				font-size: 1.3em;
+				font-size: 1.3rem;
 				line-height: 2rem;
 				margin: 0;
 				margin-bottom: 20px;
@@ -54,13 +58,14 @@
 			}		
 		}
 		&__item{
-			flex-basis: 30%;
+			right: 0;
+			position: absolute;
 			margin: 0;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			max-width: 200px;
-			height: 200px;
+			min-width: 200px;
+			min-height: 200px;
 			background: white;
 			border-radius: 50%;
 			box-shadow: 0 10px 20px rgba(0,0,0,0.19),

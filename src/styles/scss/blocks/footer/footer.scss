@@ -1,6 +1,10 @@
 .footer{
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
 	background: $header-accent-color;
-	min-height: 175px;
+	//min-height: 175px;
 	padding: 0 70px;
 	display: flex;
 	flex-direction: row;
