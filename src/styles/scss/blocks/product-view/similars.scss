@@ -1,0 +1,92 @@
+.similars{
+  padding: 0 10px;
+  &__title{
+    margin: 20px 0;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    text-align: center;
+  }
+  &-list{
+    @include clearfix;
+    &-card{
+      @include gallery(2 of $similars-no-gutter-layout)
+      //width: 330px;
+      position: relative;
+      z-index: 10;
+      background: white;
+      padding: 0;
+      padding-top: 5px;
+      //margin: 0 10px;
+      height: 330px;
+      cursor: pointer;
+      margin-bottom: 50px;
+      box-shadow: 0 -1px 3px rgba(0,0,0,0.12),
+      			0 1px 3px rgba(0,0,0,0.12),
+      			0 1px 2px rgba(0,0,0,0.24);
+      transition: box-shadow 0.2s ease-in-out;
+      &:hover {
+        box-shadow: 0 -1px 3px rgba(0,0,0,0.12),
+        0 10px 20px rgba(0,0,0,0.19),
+        0 6px 6px rgba(0,0,0,0.23);
+        .similars-list-card-info__buy{
+          background: $header-accent-color;
+          color: white;
+        }
+
+      }
+      &__img{
+        display: block;
+        max-width: 60%;
+        height: auto;
+        margin: 0 auto;
+      }
+      &-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__name{
+          width: 100%;
+          text-align: center;
+          font-family: $secondary-font;
+          margin: 0;
+          margin-top: 5px;
+          padding: 0 5px;
+        }
+        &__articul{
+          width: 100%;
+          text-align: center;
+          font-size: 0.9rem;
+        }
+        &__price{
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 50px;
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: $golden;
+        }
+        &__buy{
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 10px;
+          margin: auto;
+          background: transparent;
+          border: 2px solid $header-accent-color;
+          padding: 7px 0;
+          width: 90%;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          // &:hover{
+          // 	background: $header-accent-color;
+          // 	color: white;
+          // }
+        }
+      }
+    }
+  }
+}

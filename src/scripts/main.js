@@ -12,7 +12,7 @@ angular
 			console.log(error);
 		});
 
-	});;
+	});
 angular.module('shkredApp')
 	   .controller('headerController', function($scope){
 
@@ -26,6 +26,21 @@ angular.module('shkredApp')
 	   		
 	   });
 angular
+	.module('shkredApp')
+	.controller('similarsController', function($scope, similarsFactory) {
+
+		$scope.similars;
+
+		
+		similarsFactory.getSimilars().success(function(data) {
+			$scope.similars = data;
+		}).error(function(error) {
+			console.log(error);
+		});
+
+	});
+
+angular
    .module('shkredApp')
    .factory('bestsellersFactory', function($http) {
 
@@ -37,9 +52,16 @@ angular
          getBestsellers: getBestsellers
       }
    });
-// angular.module('shkredApp').directive('navigation', function(){
-// 	return {
-// 		restrict: 'E',
-// 		templateUrl: '<div ng-include="views/sidenav.html"></div>'
-// 	}
-// });
+angular
+   .module('shkredApp')
+   .factory('similarsFactory', function($http) {
+
+      function getSimilars() {
+         return $http.get('data/similarsData.json');
+      }
+
+      return {
+         getSimilars: getSimilars
+      }
+   });
+

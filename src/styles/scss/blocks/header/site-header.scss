@@ -3,7 +3,7 @@
 	position: fixed;
 	z-index: 100;
 	background: white;
-}	
+}
 .navbar{
 	position: relative;
 	width: 100%;
@@ -19,7 +19,7 @@
 		align-items: center;
 		min-width: 60px;
 		height: 100%;
-		
+
 		&__nav-button{
 			display: flex;
 			flex-direction: column;
@@ -38,7 +38,7 @@
 					&::before{
 						top:0px;
 						background: white;
-						transform: rotateZ(-45deg);			
+						transform: rotateZ(-45deg);
 					}
 					&:after{
 						top:0px;
@@ -61,7 +61,7 @@
 				height: 2px;
 				width: 30px;
 				transition: top 0.25s,transform 0.35s ease;
-				
+
 			}
 			&::before{
 				top: -10px;
@@ -70,7 +70,7 @@
 				top: 10px;
 			}
 		}
-		
+
 	}
 	&__logo{
 		top: 15%;
@@ -104,7 +104,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		
+
 		&__item{
 			width: 12.5%;
 			border-right: 1px solid white;
@@ -124,7 +124,8 @@
 			width: 100%;
 			text-align: center;
 			text-transform: uppercase;
-			font-size: 0.9rem;
+			font-size: 0.8rem;
+			letter-spacing: 0.05rem;
 			font-weight: 700;
 			line-height: 1rem;
 		}

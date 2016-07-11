@@ -1,6 +1,6 @@
 .slider{
 	margin-top: 65px;
-	height: 65vh;
+	height: 400px;
 	min-height: 350px;
 	padding: 0 75px;
 	display: flex;
@@ -18,28 +18,28 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	// align-items: center;
+	align-items: center;
 	&__title{
 		width: 80%;
 		text-align: center;
 		color: white;
-		font-size: 4rem;
+		font-size: 3.75rem;
 		line-height: 4rem;
 		font-weight: 300;
 		margin: 0;
-		padding-top: 50px;
+		padding-top: 10px;
 		// text-shadow: 1px 1px $header-accent-color;
 	}
 	&-promo{
-		position: relative;
-		width: 60%;
+		//position: relative;
+		width: 80%;
 		min-width: 320px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		//border: 1px solid white;
 		&-info{
-			
+			margin-left: 20px;
 			// display: flex;
 			// flex-direction: column;
 			// justify-content: space-between;
@@ -58,8 +58,9 @@
 			}		
 		}
 		&__item{
-			right: 0;
-			position: absolute;
+			//right: 0;
+			//position: absolute;
+
 			margin: 0;
 			display: flex;
 			justify-content: center;

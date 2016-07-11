@@ -21,7 +21,8 @@
   },
   "devDependencies": {
     "del": "^2.2.0",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "susy": "^2.2.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

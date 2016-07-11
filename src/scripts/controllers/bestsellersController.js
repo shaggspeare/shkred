@@ -11,4 +11,4 @@ angular
 			console.log(error);
 		});
 
-	});;
+	});

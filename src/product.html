@@ -44,10 +44,11 @@
 						<h2 class="product-view-info__name">Стакан низкий 290 мл Casablanca</h2>
 						<div class="product-view-info__articul">Артикул: 23430034</div>
 						<div class="product-view-info__price">77 грн</div>
-						<p class="product-view-info__desc"><strong class="product-view-info__desc-title">Описание: </strong>Granity 50027 Стакан низкий 200 мл от популярного производителя Arcoroc станет отличным дополнением к сервировке вашего стола. Разнообразие коллекций от Arcoroc позволяет подобрать стеклянную посуду для любого типа заведения. Благодаря соотношению цены и качества, концерн Arc International завоевал популярность у многих рестораторов по всему миру.</p>
+						<p class="product-view-info__desc"><strong class="product-view-info__desc-title">Описание : </strong>Granity 50027 Стакан низкий 200 мл от популярного производителя Arcoroc станет отличным дополнением к сервировке вашего стола. Разнообразие коллекций от Arcoroc позволяет подобрать стеклянную посуду для любого типа заведения. Благодаря соотношению цены и качества, концерн Arc International завоевал популярность у многих рестораторов по всему миру.</p>
 
 						<div class="product-view-info-chars">
 							<table class="chars-table">
+								<caption class="chars-table__caption">Характеристики : </caption>
 								<tbody class="chars-table__body">
 									<tr class="chars-table__line">
 										<td class="chars-table__cell">Тип</td>
@@ -65,13 +66,29 @@
 										<td class="chars-table__cell">Обьем</td>
 										<td class="chars-table__cell">200мл</td>
 									</tr>
+									<tr class="chars-table__line">
+										<td class="chars-table__cell">Обьем</td>
+										<td class="chars-table__cell">200мл</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
-						
 						<button class="product-view-info__btn-buy">Добавить в корзину</button>
 					</div>
-
+				</section>
+				<section class="similars" ng-controller="similarsController">
+					<h3 class="similars__title">Похожие товары : </h3>
+					<div class="similars-list">
+						<a href="#" class="similars-list-card" ng-repeat="similar in similars">
+							<img ng-src="images/25433.jpg" alt="" class="similars-list-card__img">
+							<div class="similars-list-card-info">
+								<h3 class="similars-list-card-info__name">{{similar.name}}</h3>
+								<div class="similars-list-card-info__articul">Артикул: {{similar.articul}}</div>
+								<div class="similars-list-card-info__price">{{similar.price |number:0}} грн.</div>
+								<button class="similars-list-card-info__buy">Купить</button>
+							</div>
+						</a>
+					</div>
 				</section>
 			</main>
 			<footer class="footer">

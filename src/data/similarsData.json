@@ -1,0 +1,57 @@
+[  
+   {  
+      "id":1,
+      "articul":52694,
+      "name":"Стакан низкий 245 мл Casablanca",
+      "description":"объем 245 мл, диаметр 84 мм, высота 90 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":21.9
+   },
+   {  
+      "id":2,
+      "articul":52703,
+      "name":"Стакан высокий 290 мл Casablanca",
+      "description":"объем 290 мл, диаметр 78 мм, высота 120 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":24
+   },
+   {  
+      "id":3,
+      "articul":52704,
+      "name":"Стакан низкий 355 мл Casablanca",
+      "description":"объем 355 мл, диаметр 92 мм, высота 100 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":21.6
+   },
+   {  
+      "id":4,
+      "articul":52705,
+      "name":"Стакан низкий 270 мл Casablanca",
+      "description":"объем 270 мл, диаметр 86 мм, высота 92 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":13.5
+   },
+   {  
+      "id":5,
+      "articul":52706,
+      "name":"Стакан высокий 365 мл Casablanca",
+      "description":"объем 365 мл, диаметр 80 мм, высота 148 мм.",
+      "amount":6,
+      "unit":"Стекло",
+      "category":"Стаканы",
+      "producer":"Pasabahce (Турция)",
+      "price":19.4
+   }
+]

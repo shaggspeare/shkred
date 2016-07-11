@@ -29,7 +29,7 @@ a {
 }
 
 body{
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: $primary-font;
 	color: $header-accent-color;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

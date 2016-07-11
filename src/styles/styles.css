@@ -385,7 +385,7 @@ a {
   display: none !important; }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: #333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -501,13 +501,14 @@ main {
       width: 100%;
       text-align: center;
       text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.05rem;
       font-weight: 700;
       line-height: 1rem; }
 
 .slider {
   margin-top: 65px;
-  height: 65vh;
+  height: 400px;
   min-height: 350px;
   padding: 0 75px;
   display: flex;
@@ -523,45 +524,45 @@ main {
   height: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .slide__title {
     width: 80%;
     text-align: center;
     color: white;
-    font-size: 4rem;
+    font-size: 3.75rem;
     line-height: 4rem;
     font-weight: 300;
     margin: 0;
-    padding-top: 50px; }
+    padding-top: 10px; }
   .slide-promo {
-    position: relative;
-    width: 60%;
+    width: 80%;
     min-width: 320px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
-    .slide-promo-info__description {
-      max-width: 550px;
-      color: white;
-      font-size: 1.3rem;
-      line-height: 2rem;
-      margin: 0;
-      margin-bottom: 20px; }
-    .slide-promo-info__button {
-      background: #FFF200;
-      color: #333333;
-      border: 2px solid #FFF200;
-      font-size: 1.3rem;
-      padding: 15px 60px;
-      margin: 0;
-      cursor: pointer;
-      transition: all 0.3s ease; }
-      .slide-promo-info__button:hover {
-        background: transparent;
-        color: #FFF200; }
+    .slide-promo-info {
+      margin-left: 20px; }
+      .slide-promo-info__description {
+        max-width: 550px;
+        color: white;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin: 0;
+        margin-bottom: 20px; }
+      .slide-promo-info__button {
+        background: #FFF200;
+        color: #333333;
+        border: 2px solid #FFF200;
+        font-size: 1.3rem;
+        padding: 15px 60px;
+        margin: 0;
+        cursor: pointer;
+        transition: all 0.3s ease; }
+        .slide-promo-info__button:hover {
+          background: transparent;
+          color: #FFF200; }
     .slide-promo__item {
-      right: 0;
-      position: absolute;
       margin: 0;
       display: flex;
       justify-content: center;
@@ -576,80 +577,100 @@ main {
       height: 180px;
       border-radius: 50%; }
 
-.bestseller {
-  padding: 0 20px;
-  overflow: hidden; }
-  .bestseller__title {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 2rem;
-    margin: 50px; }
-  .bestseller-range {
+.bestseller__title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 50px 0; }
+
+.bestseller-range {
+  padding: 0 50px; }
+  .bestseller-range:before, .bestseller-range:after {
+    content: "";
+    display: table; }
+  .bestseller-range:after {
+    clear: both; }
+
+.bestseller-card {
+  width: 23.52941%;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: white;
+  padding: 0;
+  padding-top: 5px;
+  height: 330px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  transition: box-shadow 0.2s ease-in-out; }
+  .bestseller-card:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0; }
+  .bestseller-card:nth-child(4n + 2) {
+    margin-left: 25.4902%;
+    margin-right: -100%;
+    clear: none; }
+  .bestseller-card:nth-child(4n + 3) {
+    margin-left: 50.98039%;
+    margin-right: -100%;
+    clear: none; }
+  .bestseller-card:nth-child(4n + 4) {
+    margin-left: 76.47059%;
+    margin-right: -100%;
+    clear: none; }
+  .bestseller-card:hover {
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    .bestseller-card:hover .bestseller-card-info__buy {
+      background: #333333;
+      color: white; }
+  .bestseller-card__img {
+    display: block;
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto; }
+  .bestseller-card-info {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .bestseller-card {
-    position: relative;
-    z-index: 10;
-    background: white;
-    padding: 0;
-    padding-top: 5px;
-    width: 330px;
-    margin: 0 10px;
-    height: 350px;
-    cursor: pointer;
-    margin-bottom: 50px;
-    transition: box-shadow 0.2s ease-in-out; }
-    .bestseller-card:hover {
-      box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-      .bestseller-card:hover .bestseller-card-info__buy {
-        background: #333333;
-        color: white; }
-    .bestseller-card__img {
-      display: block;
-      max-width: 60%;
-      height: auto;
-      margin: 0 auto; }
-    .bestseller-card-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      .bestseller-card-info__name {
-        width: 100%;
-        text-align: center;
-        font-family: 'Roboto Condensed', Arial;
-        margin: 0;
-        margin-top: 5px;
-        padding: 0 5px; }
-      .bestseller-card-info__articul {
-        width: 100%;
-        text-align: center;
-        font-size: 0.9rem; }
-      .bestseller-card-info__price {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 50px;
-        margin: auto;
-        width: 100%;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #CC9900; }
-      .bestseller-card-info__buy {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 10px;
-        margin: auto;
-        background: transparent;
-        border: 2px solid #333333;
-        padding: 7px 0;
-        width: 90%;
-        transition: all 0.3s ease; }
+    flex-direction: column;
+    justify-content: space-between; }
+    .bestseller-card-info__name {
+      width: 100%;
+      text-align: center;
+      font-family: "Roboto Condensed", Arial, sans-serif;
+      margin: 0;
+      margin-top: 5px;
+      padding: 0 5px; }
+    .bestseller-card-info__articul {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem; }
+    .bestseller-card-info__price {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 50px;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #CC9900; }
+    .bestseller-card-info__buy {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 10px;
+      margin: auto;
+      background: transparent;
+      border: 2px solid #333333;
+      padding: 7px 0;
+      width: 90%;
+      transition: all 0.3s ease;
+      cursor: pointer; }
 
 .sidenav {
   z-index: 1000;
@@ -674,7 +695,7 @@ main {
     .sidenav-list__item {
       width: 100%;
       text-align: center;
-      font-family: 'Roboto Condensed', Arial;
+      font-family: "Roboto Condensed", Arial, sans-serif;
       margin: 0;
       padding: 0;
       margin-bottom: 20px;
@@ -693,7 +714,7 @@ main {
         left: 50%;
         transition: all 0.3s ease; }
       .sidenav-list__link:hover::after {
-        left: 0%;
+        left: 0;
         width: 100%;
         background: white; }
       .sidenav-list__link--hot {
@@ -738,50 +759,52 @@ main {
       background: white; }
 
 .product-view {
-  padding: 50px;
-  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-start; }
   .product-view__image-wrapper {
+    padding: 20px 0;
     width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    border: 2px solid #333333; }
+  .product-view__img {
+    max-width: 100%; }
   .product-view-info {
     align-self: flex-start;
     width: 60%;
     padding-left: 50px; }
     .product-view-info__name {
       margin: 0;
-      font-family: "Roboto Condensed", Arial;
-      font-size: 2.75rem; }
-    .product-view-info__articul {
-      font-size: 1.3rem; }
+      font-family: "Roboto Condensed", Arial, sans-serif;
+      font-size: 2rem; }
     .product-view-info__price {
+      margin: 10px;
       color: #CC9900;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: bold;
       text-align: center; }
     .product-view-info__desc {
-      font-size: 1.25rem;
       line-height: 1.5rem; }
       .product-view-info__desc-title {
-        font-family: "Roboto Condensed", Arial;
-        font-size: 1.5rem; }
+        font-family: "Roboto Condensed", Arial, sans-serif;
+        font-size: 1.25rem; }
     .product-view-info-chars {
       width: 100%;
       margin-bottom: 30px; }
     .product-view-info__btn-buy {
       display: block;
-      margin: 0 auto;
-      margin-top: 50px;
+      margin: 20px auto;
       background: #333333;
       color: white;
       border: 2px solid #333333;
-      padding: 20px 50px;
+      padding: 12px 50px;
       width: 100%;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       transition: all 0.3s ease; }
       .product-view-info__btn-buy:hover {
         background: transparent;
@@ -789,13 +812,114 @@ main {
 
 .chars-table {
   width: 100%;
+  margin: 20px auto;
   border: 1px solid #ECECEC;
-  border-collapse: collapse;
-  font-size: 1.25rem; }
+  border-collapse: collapse; }
+  .chars-table__caption {
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold; }
   .chars-table__cell {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ECECEC; }
+
+.similars {
+  padding: 0 10px; }
+  .similars__title {
+    margin: 20px 0;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center; }
+  .similars-list:before, .similars-list:after {
+    content: "";
+    display: table; }
+  .similars-list:after {
+    clear: both; }
+  .similars-list-card {
+    width: 19.26606%;
+    float: left;
+    position: relative;
+    z-index: 10;
+    background: white;
+    padding: 0;
+    padding-top: 5px;
+    height: 330px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: box-shadow 0.2s ease-in-out; }
+    .similars-list-card:nth-child(5n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .similars-list-card:nth-child(5n + 2) {
+      margin-left: 20.18349%;
+      margin-right: -100%;
+      clear: none; }
+    .similars-list-card:nth-child(5n + 3) {
+      margin-left: 40.36697%;
+      margin-right: -100%;
+      clear: none; }
+    .similars-list-card:nth-child(5n + 4) {
+      margin-left: 60.55046%;
+      margin-right: -100%;
+      clear: none; }
+    .similars-list-card:nth-child(5n + 5) {
+      margin-left: 80.73394%;
+      margin-right: -100%;
+      clear: none; }
+    .similars-list-card:hover {
+      box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+      .similars-list-card:hover .similars-list-card-info__buy {
+        background: #333333;
+        color: white; }
+    .similars-list-card__img {
+      display: block;
+      max-width: 60%;
+      height: auto;
+      margin: 0 auto; }
+    .similars-list-card-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .similars-list-card-info__name {
+        width: 100%;
+        text-align: center;
+        font-family: "Roboto Condensed", Arial, sans-serif;
+        margin: 0;
+        margin-top: 5px;
+        padding: 0 5px; }
+      .similars-list-card-info__articul {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem; }
+      .similars-list-card-info__price {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 50px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #CC9900; }
+      .similars-list-card-info__buy {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        margin: auto;
+        background: transparent;
+        border: 2px solid #333333;
+        padding: 7px 0;
+        width: 90%;
+        transition: all 0.3s ease;
+        cursor: pointer; }
 
 .footer {
   position: fixed;
