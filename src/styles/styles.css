@@ -449,8 +449,7 @@ main {
         position: absolute;
         background-color: #333333;
         height: 2px;
-        width: 30px;
-        transition: top 0.25s,transform 0.35s ease; }
+        width: 30px; }
       .navbar-hamburger__nav-ham::before {
         top: -10px; }
       .navbar-hamburger__nav-ham::after {
@@ -502,7 +501,7 @@ main {
       text-align: center;
       text-transform: uppercase;
       font-size: 0.8rem;
-      letter-spacing: 0.05rem;
+      letter-spacing: 0.1rem;
       font-weight: 700;
       line-height: 1rem; }
 
@@ -708,7 +707,7 @@ main {
         display: block;
         content: '';
         position: absolute;
-        width: 0%;
+        width: 0;
         height: 2px;
         bottom: -5px;
         left: 50%;
@@ -759,7 +758,7 @@ main {
       background: white; }
 
 .product-view {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding: 20px 0;
   display: flex;
@@ -782,14 +781,21 @@ main {
       margin: 0;
       font-family: "Roboto Condensed", Arial, sans-serif;
       font-size: 2rem; }
-    .product-view-info__price {
-      margin: 10px;
+    .product-view-info__prod {
+      margin-bottom: 5px; }
+    .product-view-info__prod-name {
       color: #CC9900;
-      font-size: 2rem;
+      letter-spacing: 0.04rem; }
+    .product-view-info__price {
+      margin: 5px 0;
+      color: #CC9900;
+      font-size: 1.75rem;
       font-weight: bold;
       text-align: center; }
     .product-view-info__desc {
-      line-height: 1.5rem; }
+      margin: 0;
+      margin-bottom: 20px;
+      line-height: 1.35rem; }
       .product-view-info__desc-title {
         font-family: "Roboto Condensed", Arial, sans-serif;
         font-size: 1.25rem; }
@@ -823,7 +829,7 @@ main {
     font-weight: bold; }
   .chars-table__cell {
     text-align: center;
-    padding: 5px;
+    padding: 3px;
     border: 1px solid #ECECEC; }
 
 .similars {
@@ -846,7 +852,7 @@ main {
     background: white;
     padding: 0;
     padding-top: 5px;
-    height: 330px;
+    height: 300px;
     cursor: pointer;
     margin-bottom: 50px;
     box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -879,7 +885,7 @@ main {
         color: white; }
     .similars-list-card__img {
       display: block;
-      max-width: 60%;
+      max-width: 125px;
       height: auto;
       margin: 0 auto; }
     .similars-list-card-info {

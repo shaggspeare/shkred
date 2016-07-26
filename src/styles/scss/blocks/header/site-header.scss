@@ -60,7 +60,7 @@
 				background-color: $header-accent-color;
 				height: 2px;
 				width: 30px;
-				transition: top 0.25s,transform 0.35s ease;
+				//transition: top 0.25s ease , transform 0.35s ease ;
 
 			}
 			&::before{
@@ -125,7 +125,7 @@
 			text-align: center;
 			text-transform: uppercase;
 			font-size: 0.8rem;
-			letter-spacing: 0.05rem;
+			letter-spacing: 0.1rem;
 			font-weight: 700;
 			line-height: 1rem;
 		}
