@@ -35,16 +35,90 @@
 		&__articul{
 		}
 		&__price{
-			margin: 5px 0;
+			margin: 20px 0;
 			color: $golden;
-			font-size: 1.75rem;
+			font-size: 2rem;
 			font-weight: bold;
 			text-align: center;
+		}
+		&-purchase{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			&__title{
+				margin-bottom: 5px;
+				text-align: left;
+				font-family: $secondary-font;
+				font-size: 1.25rem;
+				font-weight: bold;
+				margin-right: 20px;
+				margin-bottom: 0;
+			}
+		}
+		&-quantity{
+			width: 150px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&__minus{
+				display: block;
+				width: 50px;
+				height: 50px;
+				font-size: 2rem;
+				line-height: 50px;
+				border: 2px solid $header-accent-color;
+				background: transparent;
+				color: $header-accent-color;
+			}
+			&__input{
+				flex-grow: 1;
+				max-width: 50px;
+				height: 50px;
+				padding: 5px;
+				text-align: center;
+				font-family: $primary-font;
+				font-size: 1rem;
+				font-weight: bold;
+				color: $header-accent-color;
+				line-height: 50px;
+				border-left: none;
+				border-right: none;
+				border-top: 2px solid $header-accent-color;
+				border-bottom: 2px solid $header-accent-color;
+			}
+			&__plus{
+				display: block;
+				width: 50px;
+				height: 50px;
+				font-size: 2rem;
+				line-height: 50px;
+				border: 2px solid $header-accent-color;
+				background: transparent;
+				color: $header-accent-color;
+			}
+		}
+		&__btn-buy{
+			display: block;
+			width: 100%;
+			min-height: 50px;
+			margin: 20px 0;
+			background: $header-accent-color;
+			color: white;
+			border: 2px solid $header-accent-color;
+			padding: 10px 50px;
+			font-size: 1.25rem;
+			transition: all 0.3s ease;
+			&:hover{
+				background: transparent;
+				color: $header-accent-color;
+			}
 		}
 		&__desc{
 			margin: 0;
 			margin-bottom: 20px;
-			line-height: 1.35rem;
+			line-height: 1.5rem;
 			&-title{
 				font-family: $secondary-font;
 				font-size: 1.25rem;
@@ -53,22 +127,6 @@
 		&-chars{
 			width: 100%;
 			margin-bottom: 30px;
-		}
-		
-		&__btn-buy{
-			display: block;
-			margin: 20px auto;
-			background: $header-accent-color;
-			color: white;
-			border: 2px solid $header-accent-color;
-			padding: 12px 50px;
-			width: 100%;
-			font-size: 1.25rem;
-			transition: all 0.3s ease;
-			&:hover{
-				background: transparent;
-				color: $header-accent-color;
-			}
 		}
 	}
 }
