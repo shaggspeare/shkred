@@ -39,6 +39,7 @@ angular
 		});
 
 	});
+
 angular
    .module('shkredApp')
    .factory('bestsellersFactory', function($http) {
@@ -63,5 +64,4 @@ angular
          getSimilars: getSimilars
       }
    });
-
 
