@@ -9,7 +9,7 @@
   &-list{
     @include clearfix;
     &-card{
-      @include gallery(2 of $similars-no-gutter-layout)
+      @include gallery(2 of $similars-no-gutter-layout);
       //width: 330px;
       position: relative;
       z-index: 10;

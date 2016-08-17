@@ -1,0 +1,31 @@
+<section class="slider-wrapper">
+    <div class="slider">
+        <div class="slide">
+            <h1 class="slide__title">Акция! Бокал для коньяка "Bistro" </h1>
+            <div class="slide-promo">
+                <div class="slide-promo-info">
+                    <p class="slide-promo-info__description">Cделан из офигенного швейцарского стекла. Самое то для ресторанов топ-класса. Лучшее соотношение цены и качества! Только до 1 июля!</p>
+                    <button class="slide-promo-info__button">Купить</button>
+                </div>
+                <div class="slide-promo__item">
+                    <img ng-src="images/25433.jpg" alt="" class="slide-promo__img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bestseller" ng-controller="bestsellersController">
+    <h2 class="bestseller__title">Лучшие предложения : </h2>
+    <div class="bestseller-range">
+        <a ui-sref="home.product" class="bestseller-card" ng-repeat="bestseller in bestsellers">
+            <img ng-src="images/{{bestseller.articul}}.jpg" alt="" class="bestseller-card__img">
+            <div class="bestseller-card-info">
+                <h3 class="bestseller-card-info__name">{{bestseller.name}}</h3>
+                <div class="bestseller-card-info__articul">Артикул: {{bestseller.articul}}</div>
+                <div class="bestseller-card-info__price">{{bestseller.price |number:0}} грн.</div>
+                <button class="bestseller-card-info__buy">Купить</button>
+            </div>
+        </a>
+    </div>
+</section>

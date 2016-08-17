@@ -1,0 +1,24 @@
+<div class="navbar">
+    <nav class="sidenav" ng-class="{'sidenav--active': openState}"
+         ng-include="'views/sidenav.html'">
+    </nav>
+    <div class="navbar-hamburger">
+        <div class="navbar-hamburger__nav-button"
+             ng-class="{'navbar-hamburger__nav-button--active': openState}"
+             ng-click="changeOpenState()">
+            <div class="navbar-hamburger__nav-ham"></div>
+        </div>
+    </div>
+    <img src="images/logo.svg" alt="" class="navbar__logo">
+    <div class="navbar__cart">
+        <div class="navbar__cart__title">Корзина(0)</div>
+        <img ng-src="images/shopping_cart.svg" alt="logo" class="navbar__cart__img">
+    </div>
+</div>
+<section class="categories">
+    <ul class="categories-list">
+        <li class="categories-list__item" ng-repeat="category in categories track by $index">
+            <a href="" class="categories-list__link">{{category}}</a>
+        </li>
+    </ul>
+</section>

@@ -1,1 +1,2 @@
-angular.module('shkredApp', []);
+var shkredApp = angular.module('shkredApp',
+    ['ui.router']);

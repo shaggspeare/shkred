@@ -1,106 +1,65 @@
-<html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:700,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-	<link href="styles/styles.css" rel="stylesheet" type="text/css">
-</head>
-<body ng-app ="shkredApp">
-	<div class="g-container">
-		<div class="g-wrapper">
-			<header class="g-header" ng-controller="headerController">
-				<div class="navbar">
-					<nav class="sidenav" ng-class="{'sidenav--active': openState}"
-						 ng-include="'views/sidenav.html'">
-					</nav>
-					<div class="navbar-hamburger">
-						<div class="navbar-hamburger__nav-button" ng-class="{'navbar-hamburger__nav-button--active': openState}" ng-click="changeOpenState()">
-							<div class="navbar-hamburger__nav-ham"></div>
-						</div>
-					</div>
-						<img src="images/logo.svg" alt="" class="navbar__logo">
-					<div class="navbar__cart">
-						<div class="navbar__cart__title">Корзина(0)</div>
-						<img ng-src="images/shopping_cart.svg" alt="logo" class="navbar__cart__img">
-					</div>
+<main>
+	<section class="product-view">
+		<div class="product-view__image-wrapper">
+			<img src="/images/25433.jpg" alt="" class="product-view__img">
+		</div>
+		<div class="product-view-info">
+			<h2 class="product-view-info__name">Стакан низкий 290 мл Casablanca</h2>
+			<div class="product-view-info__prod">Производитель : <span class="product-view-info__prod-name">Arcoroc (Франция)</span></div>
+			<div class="product-view-info__articul">Артикул: 23430034</div>
+			<div class="product-view-info__price">77 грн</div>
+			<div class="product-view-info-purchase">
+				<span class="product-view-info-purchase__title">Выберите количество : </span>
+				<div class="product-view-info-quantity">
+					<button class="product-view-info-quantity__minus"> - </button>
+					<input type="number" class="product-view-info-quantity__input" value="1">
+					<button class="product-view-info-quantity__plus"> + </button>
 				</div>
-				<section class="categories">
-					<ul class="categories-list">
-						<li class="categories-list__item" ng-repeat="category  in categories track by $index">
-							<a href="" class="categories-list__link">{{category}}</a>
-						</li>
-					</ul>
-				</section>
-			</header>
-			
-			<footer class="footer">
-				<div class="footer-marks">
-					<div class="footer-marks__copyright">&copy; 2016 SHKRED</div>
-					<ul class="footer-marks-social">
-						<li class="footer-marks-social__item">
-							<a href="" class="footer-marks-social__link">
-								<img ng-src="images/Facebook.svg" alt="fb" class="footer-marks-social__img">
-							</a>
-						</li>
-						<li class="footer-marks-social__item">
-							<a href="" class="footer-marks-social__link">
-								<img ng-src="images/Vkontakte.svg" alt="vk" class="footer-marks-social__img">
-							</a>
-						</li>
-						<li class="footer-marks-social__item">
-							<a href="" class="footer-marks-social__link">
-								<img ng-src="images/Google-Plus.svg" alt="gplus" class="footer-marks-social__img">
-							</a>
-						</li>
-						<li class="footer-marks-social__item">
-							<a href="" class="footer-marks-social__link">
-								<img ng-src="images/Instagram.svg" alt="insta" class="footer-marks-social__img">
-							</a>
-						</li>		
-					</ul>
+			</div>
+			<button class="product-view-info__btn-buy">Добавить в корзину</button>
+			<p class="product-view-info__desc"><strong class="product-view-info__desc-title">Описание : </strong>Granity 50027 Стакан низкий 200 мл от популярного производителя Arcoroc станет отличным дополнением к сервировке вашего стола. Разнообразие коллекций от Arcoroc позволяет подобрать стеклянную посуду для любого типа заведения. Благодаря соотношению цены и качества, концерн Arc International завоевал популярность у многих рестораторов по всему миру.</p>
+			<div class="product-view-info-chars">
+				<table class="chars-table">
+					<caption class="chars-table__caption">Характеристики : </caption>
+					<tbody class="chars-table__body">
+						<tr class="chars-table__line">
+							<td class="chars-table__cell">Тип</td>
+							<td class="chars-table__cell">Стаканы</td>
+						</tr>
+						<tr class="chars-table__line">
+							<td class="chars-table__cell">Диаметр</td>
+							<td class="chars-table__cell">81 мм</td>
+						</tr>
+						<tr class="chars-table__line">
+							<td class="chars-table__cell">Высота</td>
+							<td class="chars-table__cell">80 мм</td>
+						</tr>
+						<tr class="chars-table__line">
+							<td class="chars-table__cell">Обьем</td>
+							<td class="chars-table__cell">200мл</td>
+						</tr>
+						<tr class="chars-table__line">
+							<td class="chars-table__cell">Обьем</td>
+							<td class="chars-table__cell">200мл</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section class="similars" ng-controller="productPageController">
+		<h3 class="similars__title">Похожие товары : </h3>
+		<div class="similars-list">
+			<a href="#" class="similars-list-card" ng-repeat="similar in similars">
+				<img ng-src="images/{{similar.articul}}.jpg" alt="" class="similars-list-card__img">
+				<div class="similars-list-card-info">
+					<h3 class="similars-list-card-info__name">{{similar.name}}</h3>
+					<div class="similars-list-card-info__articul">Артикул: {{similar.articul}}</div>
+					<div class="similars-list-card-info__price">{{similar.price |number:0}} грн.</div>
+					<button class="similars-list-card-info__buy">Купить</button>
 				</div>
-				<div class="footer-links">
-					<div class="footer-links-info">
-						<ul class="footer-links-info-list">
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">О нас</a>
-							</li>
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">Доставка</a>
-							</li>
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">Оплата</a>
-							</li>
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">Контакты</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer-links-info">
-						<ul class="footer-links-info-list">
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">Личный кабинет</a>
-							</li>
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">Каталог</a>
-							</li>
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">Акции</a>
-							</li>
-							<li class="footer-links-info-list__item">
-								<a href="" class="footer-links-info-list__link">Производители</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>				
-	</div>
+			</a>
+		</div>
+	</section>
+</main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="scripts/main.js"></script>
-</body>
-
-</html>
