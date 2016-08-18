@@ -516,6 +516,7 @@ main {
   z-index: -1;
   width: 100%;
   background: #333333;
+  font-family: "Noto Serif", serif;
   padding: 0 70px;
   display: flex;
   flex-direction: row;
@@ -640,9 +641,10 @@ main {
   display: inline-block;
   width: 100%;
   text-align: center;
+  font-family: "Noto Serif", serif;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 50px 0; }
 
 .bestseller-range {
@@ -661,7 +663,7 @@ main {
   background: white;
   padding: 0;
   padding-top: 5px;
-  height: 330px;
+  height: 350px;
   cursor: pointer;
   margin-bottom: 50px;
   transition: box-shadow 0.2s ease-in-out; }
@@ -699,7 +701,7 @@ main {
     .bestseller-card-info__name {
       width: 100%;
       text-align: center;
-      font-family: "Roboto Condensed", Arial, sans-serif;
+      font-family: "Noto Serif", serif;
       margin: 0;
       margin-top: 5px;
       padding: 0 5px; }
@@ -717,7 +719,7 @@ main {
       text-align: center;
       font-size: 1.5rem;
       font-weight: bold;
-      color: #CC9900; }
+      color: #DAB368; }
     .bestseller-card-info__buy {
       position: absolute;
       right: 0;
@@ -732,6 +734,7 @@ main {
       cursor: pointer; }
 
 .sidenav {
+  text-align: center;
   z-index: 1000;
   position: absolute;
   left: 0;
@@ -753,8 +756,7 @@ main {
     list-style: none; }
     .sidenav-list__item {
       width: 100%;
-      text-align: center;
-      font-family: "Roboto Condensed", Arial, sans-serif;
+      font-family: "Noto Serif", serif;
       margin: 0;
       padding: 0;
       margin-bottom: 20px;
@@ -777,22 +779,20 @@ main {
         width: 100%;
         background: white; }
       .sidenav-list__link--hot {
-        color: #FFF200; }
+        color: #DAB368; }
   .sidenav__email {
     color: #ECECEC;
     font-size: 1.1rem;
-    margin-bottom: 10px;
-    text-align: center; }
+    margin-bottom: 10px; }
   .sidenav__phone-number {
     color: #ECECEC;
     font-size: 1.1rem;
-    margin-bottom: 10px;
-    text-align: center; }
+    margin-bottom: 10px; }
 
 .visit-catalog {
   width: 100%;
   height: 100px;
-  background: #CC9900;
+  background: #DAB368;
   padding: 0 70px;
   display: flex;
   justify-content: center;
@@ -818,136 +818,111 @@ main {
       background: white; }
 
 .product-view {
-  width: 85%;
-  margin: 0 auto;
-  padding: 20px 0;
+  height: calc(85vh - 65px);
+  padding: 50px 75px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: center; }
   .product-view__image-wrapper {
-    padding: 20px 0;
-    width: 40%;
+    width: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     border: 2px solid #333333; }
   .product-view__img {
-    max-width: 100%; }
+    max-width: 66%; }
+  .product-view-info-wrapper {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .product-view-info {
-    align-self: flex-start;
-    width: 60%;
-    padding-left: 50px; }
+    width: 100%; }
     .product-view-info__name {
+      text-align: center;
       margin: 0;
-      font-family: "Roboto Condensed", Arial, sans-serif;
+      margin-bottom: 10px;
+      font-family: "Noto Serif", serif;
       font-size: 2rem; }
-    .product-view-info__prod {
+    .product-view-info-add {
+      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 5px; }
-    .product-view-info__prod-name {
-      color: #CC9900;
-      letter-spacing: 0.04rem; }
+      .product-view-info-add__prod {
+        width: 66%; }
+      .product-view-info-add__prod-name {
+        color: #DAB368;
+        letter-spacing: 0.04rem; }
+      .product-view-info-add__articul {
+        width: 33%; }
     .product-view-info__price {
-      margin: 20px 0;
-      color: #CC9900;
-      font-size: 2rem;
+      margin: 35px 0;
+      font-family: "Noto Serif", serif;
+      font-size: 2.5rem;
       font-weight: bold;
       text-align: center; }
-    .product-view-info-purchase {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-      .product-view-info-purchase__title {
-        margin-bottom: 5px;
-        text-align: left;
-        font-family: "Roboto Condensed", Arial, sans-serif;
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin-right: 20px;
-        margin-bottom: 0; }
-    .product-view-info-quantity {
-      width: 150px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .product-view-info-quantity__minus {
-        display: block;
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
-        line-height: 50px;
-        border: 2px solid #333333;
-        background: transparent;
-        color: #333333; }
-      .product-view-info-quantity__input {
-        flex-grow: 1;
-        max-width: 50px;
-        height: 50px;
-        padding: 5px;
-        text-align: center;
-        font-family: "Roboto", Arial, sans-serif;
-        font-size: 1rem;
-        font-weight: bold;
-        color: #333333;
-        line-height: 50px;
-        border-left: none;
-        border-right: none;
-        border-top: 2px solid #333333;
-        border-bottom: 2px solid #333333; }
-      .product-view-info-quantity__plus {
-        display: block;
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
-        line-height: 50px;
-        border: 2px solid #333333;
-        background: transparent;
-        color: #333333; }
     .product-view-info__btn-buy {
       display: block;
-      width: 100%;
+      width: 60%;
       min-height: 50px;
-      margin: 20px 0;
-      background: #333333;
+      margin: 20px auto;
+      background: #DAB368;
       color: white;
-      border: 2px solid #333333;
-      padding: 10px 50px;
+      border: 2px solid #DAB368;
+      padding: 15px 50px;
+      text-transform: uppercase;
       font-size: 1.25rem;
       transition: all 0.3s ease; }
       .product-view-info__btn-buy:hover {
         background: transparent;
-        color: #333333; }
-    .product-view-info__desc {
+        color: #DAB368; }
+
+.additional-info {
+  background: #FAFAFA;
+  margin: 0 auto;
+  padding: 50px 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .additional-info-desc {
+    width: 48%; }
+    .additional-info-desc__title {
+      margin-bottom: 5px;
+      text-align: center;
+      font-weight: bold;
+      font-family: "Noto Serif", serif;
+      font-size: 1.5rem; }
+    .additional-info-desc__text {
       margin: 0;
       margin-bottom: 20px;
       line-height: 1.5rem; }
-      .product-view-info__desc-title {
-        font-family: "Roboto Condensed", Arial, sans-serif;
-        font-size: 1.25rem; }
-    .product-view-info-chars {
-      width: 100%;
-      margin-bottom: 30px; }
+  .additional-info-chars {
+    width: 48%; }
 
 .chars-table {
   width: 100%;
-  margin: 20px auto;
-  border: 1px solid #ECECEC;
+  margin: 0 auto;
   border-collapse: collapse; }
   .chars-table__caption {
-    margin-bottom: 5px;
-    text-align: left;
-    font-family: "Roboto Condensed", Arial, sans-serif;
-    font-size: 1.25rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Noto Serif", serif;
+    font-size: 1.5rem;
     font-weight: bold; }
   .chars-table__cell {
     text-align: center;
-    padding: 3px;
-    border: 1px solid #ECECEC; }
+    padding: 5px;
+    border: 2px solid #dfdfdf; }
 
 .similars {
   padding: 0 10px; }
   .similars__title {
-    margin: 20px 0;
-    font-family: "Roboto Condensed", Arial, sans-serif;
+    margin: 35px 0;
+    font-family: "Noto Serif", serif;
     font-size: 2rem;
     text-align: center; }
   .similars-list:before, .similars-list:after {
@@ -992,8 +967,8 @@ main {
     .similars-list-card:hover {
       box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
       .similars-list-card:hover .similars-list-card-info__buy {
-        background: #333333;
-        color: white; }
+        background: #DAB368;
+        border: 2px solid #d09e3f; }
     .similars-list-card__img {
       display: block;
       max-width: 125px;
@@ -1006,7 +981,7 @@ main {
       .similars-list-card-info__name {
         width: 100%;
         text-align: center;
-        font-family: "Roboto Condensed", Arial, sans-serif;
+        font-family: "Noto Serif", serif;
         margin: 0;
         margin-top: 5px;
         padding: 0 5px; }
@@ -1022,17 +997,19 @@ main {
         margin: auto;
         width: 100%;
         text-align: center;
+        font-family: "Noto Serif", serif;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #CC9900; }
+        color: #DAB368; }
       .similars-list-card-info__buy {
         position: absolute;
         right: 0;
         left: 0;
         bottom: 10px;
         margin: auto;
-        background: transparent;
+        background: #333333;
         border: 2px solid #333333;
+        color: white;
         padding: 7px 0;
         width: 90%;
         transition: all 0.3s ease;

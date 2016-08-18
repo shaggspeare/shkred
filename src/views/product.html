@@ -3,54 +3,63 @@
 		<div class="product-view__image-wrapper">
 			<img src="/images/25433.jpg" alt="" class="product-view__img">
 		</div>
-		<div class="product-view-info">
-			<h2 class="product-view-info__name">Стакан низкий 290 мл Casablanca</h2>
-			<div class="product-view-info__prod">Производитель : <span class="product-view-info__prod-name">Arcoroc (Франция)</span></div>
-			<div class="product-view-info__articul">Артикул: 23430034</div>
-			<div class="product-view-info__price">77 грн</div>
-			<div class="product-view-info-purchase">
-				<span class="product-view-info-purchase__title">Выберите количество : </span>
-				<div class="product-view-info-quantity">
-					<button class="product-view-info-quantity__minus"> - </button>
-					<input type="number" class="product-view-info-quantity__input" value="1">
-					<button class="product-view-info-quantity__plus"> + </button>
+		<div class="product-view-info-wrapper">
+			<div class="product-view-info">
+				<h2 class="product-view-info__name">Стакан низкий 290 мл Casablanca</h2>
+				<div class="product-view-info-add">
+					<div class="product-view-info-add__prod">Производитель : <span class="product-view-info-add__prod-name">Arcoroc (Франция)</span></div>
+					<div class="product-view-info-add__articul">Артикул: 23430034</div>
 				</div>
+				<div class="product-view-info__price">77 грн</div>
+				<!--<div class="product-view-info-purchase">-->
+				<!--<span class="product-view-info-purchase__title">Выберите количество : </span>-->
+				<!--<div class="product-view-info-quantity">-->
+				<!--<button class="product-view-info-quantity__minus"> - </button>-->
+				<!--<input type="number" class="product-view-info-quantity__input" value="1">-->
+				<!--<button class="product-view-info-quantity__plus"> + </button>-->
+				<!--</div>-->
+				<!--</div>-->
+				<button class="product-view-info__btn-buy">Добавить в корзину</button>
 			</div>
-			<button class="product-view-info__btn-buy">Добавить в корзину</button>
-			<p class="product-view-info__desc"><strong class="product-view-info__desc-title">Описание : </strong>Granity 50027 Стакан низкий 200 мл от популярного производителя Arcoroc станет отличным дополнением к сервировке вашего стола. Разнообразие коллекций от Arcoroc позволяет подобрать стеклянную посуду для любого типа заведения. Благодаря соотношению цены и качества, концерн Arc International завоевал популярность у многих рестораторов по всему миру.</p>
-			<div class="product-view-info-chars">
-				<table class="chars-table">
-					<caption class="chars-table__caption">Характеристики : </caption>
-					<tbody class="chars-table__body">
-						<tr class="chars-table__line">
-							<td class="chars-table__cell">Тип</td>
-							<td class="chars-table__cell">Стаканы</td>
-						</tr>
-						<tr class="chars-table__line">
-							<td class="chars-table__cell">Диаметр</td>
-							<td class="chars-table__cell">81 мм</td>
-						</tr>
-						<tr class="chars-table__line">
-							<td class="chars-table__cell">Высота</td>
-							<td class="chars-table__cell">80 мм</td>
-						</tr>
-						<tr class="chars-table__line">
-							<td class="chars-table__cell">Обьем</td>
-							<td class="chars-table__cell">200мл</td>
-						</tr>
-						<tr class="chars-table__line">
-							<td class="chars-table__cell">Обьем</td>
-							<td class="chars-table__cell">200мл</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+		</div>
+	</section>
+	<section class="additional-info">
+		<div class="additional-info-chars">
+			<table class="chars-table">
+				<caption class="chars-table__caption">Характеристики : </caption>
+				<tbody class="chars-table__body">
+				<tr class="chars-table__line">
+					<td class="chars-table__cell">Тип</td>
+					<td class="chars-table__cell">Стаканы</td>
+				</tr>
+				<tr class="chars-table__line">
+					<td class="chars-table__cell">Диаметр</td>
+					<td class="chars-table__cell">81 мм</td>
+				</tr>
+				<tr class="chars-table__line">
+					<td class="chars-table__cell">Высота</td>
+					<td class="chars-table__cell">80 мм</td>
+				</tr>
+				<tr class="chars-table__line">
+					<td class="chars-table__cell">Обьем</td>
+					<td class="chars-table__cell">200мл</td>
+				</tr>
+				<tr class="chars-table__line">
+					<td class="chars-table__cell">Обьем</td>
+					<td class="chars-table__cell">200мл</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="additional-info-desc">
+			<div class="additional-info-desc__title">Описание : </div>
+			<p class="additional-info-desc__text">Granity 50027 Стакан низкий 200 мл от популярного производителя Arcoroc станет отличным дополнением к сервировке вашего стола. Разнообразие коллекций от Arcoroc позволяет подобрать стеклянную посуду для любого типа заведения. Благодаря соотношению цены и качества, концерн Arc International завоевал популярность у многих рестораторов по всему миру.</p>
 		</div>
 	</section>
 	<section class="similars" ng-controller="productPageController">
 		<h3 class="similars__title">Похожие товары : </h3>
 		<div class="similars-list">
-			<a href="#" class="similars-list-card" ng-repeat="similar in similars">
+			<a ui-sref="home.product" class="similars-list-card" ng-repeat="similar in similars">
 				<img ng-src="images/{{similar.articul}}.jpg" alt="" class="similars-list-card__img">
 				<div class="similars-list-card-info">
 					<h3 class="similars-list-card-info__name">{{similar.name}}</h3>

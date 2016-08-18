@@ -32,6 +32,7 @@ angular
 		});
 
 	});
+
 angular
    .module('shkredApp')
    .factory('bestsellersFactory', function($http) {
@@ -85,5 +86,4 @@ shkredApp.
                 }
             });
     }]);
-
 
