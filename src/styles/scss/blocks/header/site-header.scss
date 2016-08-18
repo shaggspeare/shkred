@@ -114,9 +114,14 @@
 			color: white;
 			&:last-child{
 				border: none;
+
+				.categories-list__link{
+					color: $golden;
+				}
 			}
+
 			:hover{
-				color: $action-color;
+				color: $golden;
 			}
 		}
 		&__link{
@@ -128,6 +133,7 @@
 			letter-spacing: 0.1rem;
 			font-weight: 700;
 			line-height: 1rem;
+
 		}
 	}
 }

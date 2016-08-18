@@ -6,9 +6,9 @@
 	list-style: none;
 }
 @mixin base-button{
-	background: $action-color;
+	background: $golden;;
 	color: $header-accent-color;
-	border: 2px solid $action-color;
+	border: 2px solid $golden;;
 	font-size: 1.3rem;
 	padding: 15px 60px;
 	margin: 0;
@@ -16,7 +16,7 @@
 	transition: all 0.3s ease;
 	&:hover{
 		background: transparent;
-		color: $action-color;
+		color: $golden;
 	}
 }
 @mixin clearfix{

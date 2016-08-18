@@ -55,6 +55,9 @@
 			}
 			&__button{
 				@include base-button;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 0.15rem;
 			}		
 		}
 		&__item{

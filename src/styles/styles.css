@@ -498,8 +498,10 @@ main {
       color: white; }
       .categories-list__item:last-child {
         border: none; }
+        .categories-list__item:last-child .categories-list__link {
+          color: #DAB368; }
       .categories-list__item :hover {
-        color: #FFF200; }
+        color: #DAB368; }
     .categories-list__link {
       color: white;
       width: 100%;
@@ -611,17 +613,20 @@ main {
         margin: 0;
         margin-bottom: 20px; }
       .slide-promo-info__button {
-        background: #FFF200;
+        background: #DAB368;
         color: #333333;
-        border: 2px solid #FFF200;
+        border: 2px solid #DAB368;
         font-size: 1.3rem;
         padding: 15px 60px;
         margin: 0;
         cursor: pointer;
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem; }
         .slide-promo-info__button:hover {
           background: transparent;
-          color: #FFF200; }
+          color: #DAB368; }
     .slide-promo__item {
       margin: 0;
       display: flex;
@@ -687,7 +692,8 @@ main {
   .bestseller-card:hover {
     box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
     .bestseller-card:hover .bestseller-card-info__buy {
-      background: #333333;
+      background: #DAB368;
+      border: 2px solid #d09e3f;
       color: white; }
   .bestseller-card__img {
     display: block;
@@ -726,9 +732,10 @@ main {
       left: 0;
       bottom: 10px;
       margin: auto;
-      background: transparent;
+      background: #333333;
       border: 2px solid #333333;
       padding: 7px 0;
+      color: white;
       width: 90%;
       transition: all 0.3s ease;
       cursor: pointer; }
@@ -743,8 +750,10 @@ main {
   background: #1D1D1B;
   height: 100vh;
   color: white;
-  padding: 20px;
-  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
   transform: translateX(-100%);
   transition: all 0.35s ease; }
   .sidenav--active {
@@ -780,14 +789,6 @@ main {
         background: white; }
       .sidenav-list__link--hot {
         color: #DAB368; }
-  .sidenav__email {
-    color: #ECECEC;
-    font-size: 1.1rem;
-    margin-bottom: 10px; }
-  .sidenav__phone-number {
-    color: #ECECEC;
-    font-size: 1.1rem;
-    margin-bottom: 10px; }
 
 .visit-catalog {
   width: 100%;
@@ -818,7 +819,7 @@ main {
       background: white; }
 
 .product-view {
-  height: calc(85vh - 65px);
+  height: calc(100vh - 65px);
   padding: 50px 75px;
   display: flex;
   justify-content: space-between;
@@ -828,7 +829,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     border: 2px solid #333333; }
   .product-view__img {
     max-width: 66%; }
@@ -872,6 +873,7 @@ main {
       margin: 20px auto;
       background: #DAB368;
       color: white;
+      cursor: pointer;
       border: 2px solid #DAB368;
       padding: 15px 50px;
       text-transform: uppercase;

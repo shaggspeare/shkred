@@ -33,32 +33,9 @@ angular
 
 	});
 
-angular
-   .module('shkredApp')
-   .factory('bestsellersFactory', function($http) {
-
-      function getBestsellers() {
-         return $http.get('data/bestsellersData.json');
-      }
-
-      return {
-         getBestsellers: getBestsellers
-      }
-   });
-angular
-   .module('shkredApp')
-   .factory('similarsFactory', function($http) {
-
-      function getSimilars() {
-         return $http.get('data/similarsData.json');
-      }
-
-      return {
-         getSimilars: getSimilars
-      }
-   });
 shkredApp.
     config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('home', {
@@ -87,3 +64,28 @@ shkredApp.
             });
     }]);
 
+
+angular
+   .module('shkredApp')
+   .factory('bestsellersFactory', function($http) {
+
+      function getBestsellers() {
+         return $http.get('data/bestsellersData.json');
+      }
+
+      return {
+         getBestsellers: getBestsellers
+      }
+   });
+angular
+   .module('shkredApp')
+   .factory('similarsFactory', function($http) {
+
+      function getSimilars() {
+         return $http.get('data/similarsData.json');
+      }
+
+      return {
+         getSimilars: getSimilars
+      }
+   });

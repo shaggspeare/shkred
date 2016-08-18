@@ -1,5 +1,6 @@
 shkredApp.
     config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('home', {
