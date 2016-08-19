@@ -566,7 +566,7 @@ main {
         color: white;
         transition: color 0.3s ease; }
         .g-footer-links-info-list__link:hover {
-          color: #FFF200; }
+          color: #DAB368; }
 
 .slider {
   margin-top: 65px;
@@ -616,14 +616,13 @@ main {
         background: #DAB368;
         color: #333333;
         border: 2px solid #DAB368;
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 15px 60px;
         margin: 0;
         cursor: pointer;
         transition: all 0.3s ease;
         color: white;
-        text-transform: uppercase;
-        letter-spacing: 0.15rem; }
+        text-transform: uppercase; }
         .slide-promo-info__button:hover {
           background: transparent;
           color: #DAB368; }
@@ -819,7 +818,7 @@ main {
       background: white; }
 
 .product-view {
-  height: calc(100vh - 65px);
+  height: calc(88vh - 65px);
   padding: 50px 75px;
   display: flex;
   justify-content: space-between;
@@ -875,18 +874,44 @@ main {
       color: white;
       cursor: pointer;
       border: 2px solid #DAB368;
-      padding: 15px 50px;
+      padding: 20px 50px;
       text-transform: uppercase;
-      font-size: 1.25rem;
+      font-size: 1rem;
       transition: all 0.3s ease; }
       .product-view-info__btn-buy:hover {
         background: transparent;
         color: #DAB368; }
 
+.go-on {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .go-on__arrow {
+    position: relative;
+    padding: 1vh 0;
+    height: 10vh;
+    width: 10vh;
+    background-image: url(../images/arrow-down.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    .go-on__arrow:before {
+      content: '';
+      position: absolute;
+      top: -2vh;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10vh;
+      width: 10vh;
+      background-image: url(../images/arrow-down.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+
 .additional-info {
   background: #FAFAFA;
   margin: 0 auto;
-  padding: 50px 75px;
+  padding: 75px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }

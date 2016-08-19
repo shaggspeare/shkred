@@ -1,7 +1,7 @@
 <main>
 	<section class="product-view">
 		<div class="product-view__image-wrapper">
-			<img src="/images/25433.jpg" alt="" class="product-view__img">
+			<img src="/images/25425.jpg" alt="" class="product-view__img">
 		</div>
 		<div class="product-view-info-wrapper">
 			<div class="product-view-info">
@@ -22,6 +22,9 @@
 				<button class="product-view-info__btn-buy">Добавить в корзину</button>
 			</div>
 		</div>
+	</section>
+	<section class="go-on">
+		<a href="#" class="go-on__arrow"></a>
 	</section>
 	<section class="additional-info">
 		<div class="additional-info-chars">
@@ -57,7 +60,7 @@
 		</div>
 	</section>
 	<section class="similars" ng-controller="productPageController">
-		<h3 class="similars__title">Похожие товары : </h3>
+		<h3 class="similars__title">Похожие товары</h3>
 		<div class="similars-list">
 			<a ui-sref="home.product" class="similars-list-card" ng-repeat="similar in similars">
 				<img ng-src="images/{{similar.articul}}.jpg" alt="" class="similars-list-card__img">
