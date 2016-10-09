@@ -6,13 +6,14 @@
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif|Roboto:700,300&subset=latin,cyrillic-ext'
 		  rel='stylesheet' type='text/css'>
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="g-container">
 		<div class="g-wrapper">
 			<header class="g-header">
 				<div class="navbar">
-				    <nav class="sidenav" class="{'sidenav--active': openState}">
+				    <nav class="sidenav" >
 				    	<ul class="sidenav-list">
 							<li class="sidenav-list__item">
 								<a href="" class="sidenav-list__link">Главная</a>
@@ -32,9 +33,7 @@
 						</ul>
 				    </nav>
 				    <div class="navbar-hamburger">
-				        <div class="navbar-hamburger__nav-button"
-				             class="{'navbar-hamburger__nav-button--active': openState}"
-				             click="changeOpenState()">
+				        <div class="navbar-hamburger__nav-button">
 				            <div class="navbar-hamburger__nav-ham"></div>
 				        </div>
 				    </div>
@@ -77,14 +76,14 @@
 			<main>
 				<section class="product-view">
 					<div class="product-view__image-wrapper">
-						<img src="/images/25425.jpg" alt="" class="product-view__img">
+						<img src="images/25425.jpg" alt="" class="product-view__img">
 					</div>
 					<div class="product-view-info-wrapper">
 						<div class="product-view-info">
 							<h2 class="product-view-info__name">Стакан низкий 290 мл Casablanca</h2>
 							<div class="product-view-info-add">
-								<div class="product-view-info-add__prod">Производитель : <span class="product-view-info-add__prod-name">Arcoroc (Франция)</span></div>
-								<div class="product-view-info-add__articul">Артикул: 23430034</div>
+								<span class="product-view-info-add__prod">Производитель : <span class="product-view-info-add__prod-name">Arcoroc (Франция)</span></span>
+								<span class="product-view-info-add__articul">Артикул: 23430034</span>
 							</div>
 							<div class="product-view-info__price">77 грн</div>
 							<!--<div class="product-view-info-purchase">-->

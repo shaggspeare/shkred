@@ -84,7 +84,6 @@ gulp.task('scssDeploy', function () {
   gulp.src(['src/styles/styles.css'])
     .pipe(plumber())
     .pipe(autoprefixer())
-    .pipe(minify())
     .pipe(gulp.dest('dist/styles'));
 });
 
@@ -98,7 +97,7 @@ gulp.task('jsDeploy', function () {
 });
 
 gulp.task('imagesDeploy', function () {
-  gulp.src(['src/images/*.png', 'src/images/*.jpg', 'src/images/*.ico'])
+  gulp.src(['src/images/*.png', 'src/images/*.jpg', 'src/images/*.svg'])
     .pipe(plumber())
     .pipe(imageopt({
       optimalizationLevel: 5,

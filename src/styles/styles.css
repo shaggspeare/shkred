@@ -842,23 +842,19 @@ main {
     .product-view-info__name {
       text-align: center;
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       font-family: "Noto Serif", serif;
       font-size: 2rem; }
     .product-view-info-add {
       margin: 0 auto;
       width: 80%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
       margin-bottom: 5px; }
       .product-view-info-add__prod {
-        width: 66%; }
+        margin-right: 10px; }
       .product-view-info-add__prod-name {
         color: #DAB368;
         letter-spacing: 0.04rem; }
-      .product-view-info-add__articul {
-        width: 33%; }
     .product-view-info__price {
       margin: 35px 0;
       font-family: "Noto Serif", serif;
