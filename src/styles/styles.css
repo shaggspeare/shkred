@@ -1037,3 +1037,38 @@ main {
         width: 90%;
         transition: all 0.3s ease;
         cursor: pointer; }
+
+.contact {
+  margin-top: 65px;
+  height: calc(100vh - 85px);
+  min-height: 350px;
+  padding: 0 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white; }
+  .contact-wrapper {
+    background-image: url(../images/hero-2.jpg);
+    background-position: center 0;
+    background-size: cover; }
+  .contact__title {
+    width: 80%;
+    text-align: center;
+    font-size: 3.75rem;
+    line-height: 4rem;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 20px; }
+  .contact-info__item {
+    width: 515px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .contact-info__type {
+    margin-right: 10px;
+    min-width: 150px; }
