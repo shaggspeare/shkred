@@ -1,7 +1,4 @@
 .g-footer{
-	position: fixed;
-	bottom: 0;
-	z-index: -1;
 	width: 100%;
 	background: $header-accent-color;
 	font-family: $secondary-font;
@@ -10,11 +7,11 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	color: white;
 	&-marks{
-		margin: 20px 0;
+		margin: 20px 40px 20px 0px;
 		width: 500px;
 		display: flex;
 		flex-direction: row;

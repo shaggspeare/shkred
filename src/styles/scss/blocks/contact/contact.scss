@@ -1,3 +1,4 @@
+// Contact page
 .contact{
 	margin-top: 65px;
 	height: calc(100vh - 85px);
@@ -39,5 +40,8 @@
 			min-width: 150px;
 		}
 		&__desc{}
+		&__owner{
+			color: $golden;
+		}
 	}
 }
